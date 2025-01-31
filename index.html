@@ -10,7 +10,6 @@
     <div id="nav">
         <nav>
             <ul>
-                <li id="logoimagen"><a href="#logo"><img src= ></a></li>
                 <li id="informacionnav"><a href="#nav1">INFORMACIÓN</a></li>
                 <li id="actividadesnav"><a href="#nav2">ACTIVIDADES</a></li>
                 <li id="matriculanav"><a href="#nav3">MATRÍCULA</a></li>
@@ -27,19 +26,19 @@
         <h2>INFORMACIÓN</h2>
     </div>
     <ul>
-        <div id="general">
+        <div id="general" class="izquierda">
             <li><h3>GENERAL</h3></li>
-            <p>El Polideportivo Jelzy cuenta con 2000m² de terreno con 1000 pies cuadrados de espacio para equipos deportivos.
+            <p>El Polideportivo Jelzy cuenta con 6000m² de espacio para actividades deportivas.
             Entre ellos ofrece un gran espacio para juegos deportivos, como el campo de fútbol, la piscina, y la pista de pádel.
             Además cuenta con un amplio gimnasio adaptado con las últimas máquinas para poner en forma tu cuerpo.</p>
         </div>
-        <div id="ubicacion">
+        <div id="ubicacion" class="derecha">
             <li><h3>UBICACIÓN</h3></li>
             <p>El espacio se encuentra en la Calle Uria, número 52, a las afueras de la ciudad de Zaragoza.
             Se puede llegar fácilmente con el transporte público, bien sea autobús o tranvía.
             Además cuenta con un amplio parking subterráneo a disposición de cualquier usuario.</p>
         </div>
-        <div id="monitores">
+        <div id="monitores" class="izquierda">
             <li><h3>MONITORES</h3></li>
             <p>El Polideportivo Jelzy cuenta con personal capacitado para supervisar las distintas actividades impartidas.
             Estos monitores son los encargados de asegurar que todos los equipos funcionen de manera correcta y segura,
@@ -50,33 +49,47 @@
             <h2>ACTIVIDADES</h2>
         </div>
         <ul>
-            <div id="gimnasio">
-                <li><h3>GIMNASIO</h3></li>
-                <p>Cuenta con un gran espacio de máquinas para entrenamiento libre y con tres salas para clases guiadas
-                como por ejemplo Zumba, BodyPump y Spinning.</p>
+            <div id="gimnasio" class="izquierda">
+                <img src="images/gimnasio.jpg" alt="Gimnasio Polideportivo Jelzy">
+                <div class="texto">
+                    <li><h3>GIMNASIO</h3></li>
+                    <p>Cuenta con un gran espacio de máquinas para entrenamiento libre y con tres salas para clases guiadas
+                    como por ejemplo Zumba, BodyPump y Spinning.</p>
+                </div>
             </div>
-            <div id="futbol">
-                <li><h3>FÚTBOL</h3></li>
-                <p>Dispone de dos campos de fútbol. Uno para la práctica libre, reservable para jugar con amigos,
-                y otro para los equipos entrenados por el polideportivo, de distintas edades y categorías.</p>
+            
+            <div id="futbol" class="derecha">
+                <img src="images/futbol.jpg" alt="Campo de fútbol Polideportivo Jelzy">
+                <div class="texto">
+                    <li><h3>FÚTBOL</h3></li>
+                    <p>Dispone de dos campos de fútbol. Uno para la práctica libre, reservable para jugar con amigos,
+                    y otro para los equipos entrenados por el polideportivo, de distintas edades y categorías.</p>
+                </div>
             </div>
-            <div id="natacion">
-                <li><h3>NATACIÓN</h3></li>
-                <p>La gran piscina cubierta, además del estilo libre, ofrece actividades como
-                como AquaGym e HydroSpinning.</p>
+            
+            <div id="natacion" class="izquierda">
+                <img src="images/natacion.jpg" alt="Piscina Polideportivo Jelzy">
+                <div class="texto">
+                    <li><h3>NATACIÓN</h3></li>
+                    <p>La gran piscina cubierta, además del estilo libre, ofrece actividades como AquaGym e HydroSpinning.</p>
+                </div>
             </div>
-            <div id="padel">
-                <li><h3>PÁDEL</h3></li>
-                <p>Cuenta con tres pistas de pádel para jugar libremente o en los torneos
-                organizados por el polideportivo.</p>
+            <div id="padel" class="derecha">
+                <img src="images/padel.jpg" alt="Pistas de pádel Polideportivo Jelzy">
+                <div class="texto">
+                    <li><h3>PÁDEL</h3></li>
+                    <p>Cuenta con pistas de pádel para jugar libremente o en los torneos
+                    organizados por el polideportivo.</p>
+                </div>
             </div>
+            
         </ul>
         <div id="nav3">
             <h2>MATRÍCULA</h2>
         </div>
             <form>
-                <p><label for="nombre">Nombre:
-                    <input type="text" id="nombre" name="nombre" required>
+                <p><label for="name">Nombre:
+                    <input type="text" id="name" name="name" required>
                 </label></p>
                 <p><label for="apellidos">Apellidos:
                     <input type="text" id="apellidos" name="apellidos" required>
@@ -96,7 +109,7 @@
                 <p><label for="fecha_nacimiento">Fecha de Nacimiento:
                     <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
                 </label></p>
-                <input type="submit" value="Enviar"/>
+                <input id= "enviar" type="submit" value="Enviar"/>
             </form>
     <footer>
         <div>

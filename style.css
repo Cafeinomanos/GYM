@@ -1,0 +1,283 @@
+/*General*/
+body {
+    margin: 0;
+    padding: 70px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background: url('images/polideportivo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /*Oscurece un poco el fondo*/
+    z-index: -1;
+}
+
+li {
+    list-style: none;
+}
+
+::selection {
+    background: paleturquoise;
+    color: royalblue;
+    text-shadow: none;
+}
+
+/*Navegación*/
+nav {
+    background-color: #333;
+    color: white;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    overflow: hidden;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+nav li {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: paleturquoise;
+    padding: 10px 15px;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+nav li a::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: paleturquoise;
+    transition: transform 0.4s ease;
+    z-index: -1;
+}
+
+nav li a:hover::before {
+    top: 0;
+}
+
+nav li a:hover {
+    color: paleturquoise;
+    background-color: royalblue;
+}
+
+/*Estilo del titulo y el eslogan*/
+
+#nombre, #eslogan {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 3px 3px 0px paleturquoise;
+}
+
+#nombre {
+    font-size: 50px;
+    color: black;
+    padding-top: 50px;
+}
+
+#eslogan {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+
+#nombre::before, #eslogan::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.15);
+    z-index: -1;
+}
+
+#nav1, #nav2, #nav3 {
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    text-shadow: 3px 3px 0px paleturquoise;
+    text-align: center;
+    font-size: 25px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+#general, #ubicacion, #monitores, #gimnasio, #futbol, #natacion, #padel {
+    width: 45%;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.derecha {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+    max-width: 1200px;
+    flex-direction: row-reverse;
+}
+
+.izquierda {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: auto;
+    margin-left: 0;
+    max-width: 1200px;
+}
+
+.derecha, .izquierda {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.izquierda img, .derecha img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.texto {
+    flex: 1;
+}
+
+h3 {
+    font-family:  'Oswald', sans-serif;
+    text-shadow: 3px 3px 0px royalblue;
+    color: paleturquoise;
+}
+
+#actividades {
+    margin-left: auto;
+}
+
+/*Formulario*/
+
+form {
+    padding: 20px;
+    margin: 20px auto;
+    margin-bottom: 100px;
+    border: 3px solid royalblue;
+    border-radius: 10px;
+    background-color: #333;
+    max-width: 600px;
+}
+
+form textarea {
+    width: 95%;
+    height: 100px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid paleturquoise;
+    border-radius: 5px;
+}
+
+#enviar {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: royalblue;
+    color: paleturquoise;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#enviar:hover {
+    background-color: paleturquoise;
+    color: royalblue;
+}
+
+/*Footer*/
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    line-height: 1.2;
+}
+
+footer div {
+    margin-bottom: 1px;
+}
+
+footer a {
+    color: paleturquoise;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 1px;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+footer p {
+    color: #ddd;
+    margin: 2px 0;
+}
+
+footer img.icon {
+    width: 50px;
+    height: 50px;
+}
