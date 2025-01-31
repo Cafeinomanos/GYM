@@ -12,7 +12,7 @@
             <ul>
                 <li id="informacionnav"><a href="#nav1">INFORMACIÓN</a></li>
                 <li id="actividadesnav"><a href="#nav2">ACTIVIDADES</a></li>
-                <li id="matriculanav"><a href="#nav3">MATRÍCULA</a></li>
+                <li id="reservanav"><a href="#nav3">RESERVA TU CLASE</a></li>
             </ul>
         </nav>
     </div>
@@ -85,7 +85,7 @@
             
         </ul>
         <div id="nav3">
-            <h2>MATRÍCULA</h2>
+            <h2>RESERVA TU CLASE</h2>
         </div>
             <form>
                 <p><label for="name">Nombre:
@@ -97,17 +97,14 @@
                 <p><label for="telefono">Teléfono:
                     <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required>
                 </label></p>
-                <p><label for="direccion">Dirección:
-                    <input type="text" id="direccion" name="direccion" required>
-                </label></p>
                 <p><label for="email">Email:
                     <input type="email" id="email" name="email" required>
                 </label></p>
-                <p><label for="dni">DNI:
-                    <input type="text" id="dni" name="dni" pattern="[0-9]{8}[A-Z]" required>
+                <p><label for="fecha_reserva">Fecha de reserva:
+                    <input type="date" id="fecha_reserva" name="fecha_reserva" required>
                 </label></p>
-                <p><label for="fecha_nacimiento">Fecha de Nacimiento:
-                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                <p><label for="hora_reserva">Hora de reserva:
+                    <input type="time" id="hora_reserva" name="hora_reserva" required>
                 </label></p>
                 <input id= "enviar" type="submit" value="Enviar"/>
             </form>
@@ -115,7 +112,7 @@
         <div>
             <a href="#nav1">Información</a> | 
             <a href="#nav2">Actividades</a> | 
-            <a href="#nav3">Matrícula</a>
+            <a href="#nav3">Reserva tu clase</a>
         </div>
         <div>
             <p>Síguenos en nuestras redes sociales:</p>
