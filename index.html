@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polideportivo Jelzy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="nav">
+        <nav>
+            <ul>
+                <li id="logoimagen"><a href="#logo"><img src= ></a></li>
+                <li id="informacionnav"><a href="#nav1">INFORMACIÓN</a></li>
+                <li id="actividadesnav"><a href="#nav2">ACTIVIDADES</a></li>
+                <li id="matriculanav"><a href="#nav3">MATRÍCULA</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="nombre">
+        <h1>POLIDEPORTIVO JELZY</h1>
+    </div>
+    <div id="eslogan">
+        <h2>¡ANÍMATE A SENTIRTE MEJOR!</h2>
+    </div>
+    <div id="nav1">
+        <h2>INFORMACIÓN</h2>
+    </div>
+    <ul>
+        <div id="general">
+            <li><h3>GENERAL</h3></li>
+            <p>El Polideportivo Jelzy cuenta con 2000m² de terreno con 1000 pies cuadrados de espacio para equipos deportivos.
+            Entre ellos ofrece un gran espacio para juegos deportivos, como el campo de fútbol, la piscina, y la pista de pádel.
+            Además cuenta con un amplio gimnasio adaptado con las últimas máquinas para poner en forma tu cuerpo.</p>
+        </div>
+        <div id="ubicacion">
+            <li><h3>UBICACIÓN</h3></li>
+            <p>El espacio se encuentra en la Calle Uria, número 52, a las afueras de la ciudad de Zaragoza.
+            Se puede llegar fácilmente con el transporte público, bien sea autobús o tranvía.
+            Además cuenta con un amplio parking subterráneo a disposición de cualquier usuario.</p>
+        </div>
+        <div id="monitores">
+            <li><h3>MONITORES</h3></li>
+            <p>El Polideportivo Jelzy cuenta con personal capacitado para supervisar las distintas actividades impartidas.
+            Estos monitores son los encargados de asegurar que todos los equipos funcionen de manera correcta y segura,
+            así como de ayudar a que los ejercicios se realizan correctamente, con el fin de evitar lesiones.</p>
+        </div>
+    </ul>
+        <div id="nav2">
+            <h2>ACTIVIDADES</h2>
+        </div>
+        <ul>
+            <div id="gimnasio">
+                <li><h3>GIMNASIO</h3></li>
+                <p>Cuenta con un gran espacio de máquinas para entrenamiento libre y con tres salas para clases guiadas
+                como por ejemplo Zumba, BodyPump y Spinning.</p>
+            </div>
+            <div id="futbol">
+                <li><h3>FÚTBOL</h3></li>
+                <p>Dispone de dos campos de fútbol. Uno para la práctica libre, reservable para jugar con amigos,
+                y otro para los equipos entrenados por el polideportivo, de distintas edades y categorías.</p>
+            </div>
+            <div id="natacion">
+                <li><h3>NATACIÓN</h3></li>
+                <p>La gran piscina cubierta, además del estilo libre, ofrece actividades como
+                como AquaGym e HydroSpinning.</p>
+            </div>
+            <div id="padel">
+                <li><h3>PÁDEL</h3></li>
+                <p>Cuenta con tres pistas de pádel para jugar libremente o en los torneos
+                organizados por el polideportivo.</p>
+            </div>
+        </ul>
+        <div id="nav3">
+            <h2>MATRÍCULA</h2>
+        </div>
+            <form>
+                <p><label for="nombre">Nombre:
+                    <input type="text" id="nombre" name="nombre" required>
+                </label></p>
+                <p><label for="apellidos">Apellidos:
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </label></p>
+                <p><label for="telefono">Teléfono:
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required>
+                </label></p>
+                <p><label for="direccion">Dirección:
+                    <input type="text" id="direccion" name="direccion" required>
+                </label></p>
+                <p><label for="email">Email:
+                    <input type="email" id="email" name="email" required>
+                </label></p>
+                <p><label for="dni">DNI:
+                    <input type="text" id="dni" name="dni" pattern="[0-9]{8}[A-Z]" required>
+                </label></p>
+                <p><label for="fecha_nacimiento">Fecha de Nacimiento:
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                </label></p>
+                <input type="submit" value="Enviar"/>
+            </form>
+    <footer>
+        <div>
+            <a href="#nav1">Información</a> | 
+            <a href="#nav2">Actividades</a> | 
+            <a href="#nav3">Matrícula</a>
+        </div>
+        <div>
+            <p>Síguenos en nuestras redes sociales:</p>
+            <p>
+                <a href="https://www.instagram.com/PolideportivoJelzy" target="_blank">
+                    <img src="images/logoinstagram.png" alt="Instagram" class="icon"> Instagram
+                </a>
+                <a href="https://www.twitter.com/PolideportivoJelzy" target="_blank">
+                    <img src="images/logotwitter.png" alt="Twitter" class="icon"> Twitter
+                </a>
+                <a href="https://www.facebook.com/PolideportivoJelzy" target="_blank">
+                    <img src="images/logofacebook.png" alt="Facebook" class="icon"> Facebook
+                </a>
+            </p>
+        </div>
+        <div>
+            <p>Horario: Lunes a Domingo de 6:00 a 23:00 horas.</p>
+            <p>Teléfono: <a href="tel:976252525">976 252 525</a></p>
+        </div>
+        <p>Política de privacidad y cookies: Este sitio web utiliza cookies para mejorar la experiencia del usuario. Para más información, consulta nuestra <a href="#">política de privacidad</a>.</p>
+    </footer>  
+</body>
+</html>
