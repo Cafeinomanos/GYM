@@ -20,7 +20,7 @@ const db = new sqlite3.Database('./database.sqlite', (err) => {
 
 // Endpoint para registrar usuarios
 app.post('/usuarios', (req, res) => {
-    const { nombre, apellidos, telefono, email, direccion } = req.body;
+    const { nombre, apellidos, telefono, email, direccion = "No especificada"} = req.body;
     const sql = `INSERT INTO Usuarios (nombre, apellidos, telefono, email, direccion) VALUES (?, ?, ?, ?, ?)`;
     db.run(sql, [nombre, apellidos, telefono, email, direccion], function(err) {
         if (err) {
@@ -74,7 +74,7 @@ app.put('/usuarios/:id', (req, res) => {
     });
 });
 
-// Endpoint para eliminar un usuario por ID
+//  eliminar un usuario por ID
 app.delete('/usuarios/:id', (req, res) => {
     const { id } = req.params;
     const sql = 'DELETE FROM Usuarios WHERE id = ?';
@@ -89,7 +89,7 @@ app.delete('/usuarios/:id', (req, res) => {
     });
 });
 
-// Servidor escuchando en el puerto 3000
+// Servidor  puerto 3000
 app.listen(port, () => {
     console.log(`Servidor backend ejecutándose en: http://localhost:${port}`);
 });
