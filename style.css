@@ -23,6 +23,31 @@ body::before {
     z-index: -1;
 }
 
+#language-switcher {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#language-switcher button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#language-switcher img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#language-switcher img:hover {
+    transform: scale(1.1);
+}
+
+
 li {
     list-style: none;
 }
