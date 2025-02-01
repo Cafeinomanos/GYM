@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "ebd90130-da77-4433-ab68-da8f600d549f",
+		"name": "gym",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41720809"
+	},
+	"item": [
+		{
+			"name": "create_user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/usuarios?nombre=Cristian &apellidos=Alonso &telefono=2543453&email=cristian@gmail.com&direccion=calle uria",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuarios"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "Cristian "
+						},
+						{
+							"key": "apellidos",
+							"value": "Alonso "
+						},
+						{
+							"key": "telefono",
+							"value": "2543453"
+						},
+						{
+							"key": "email",
+							"value": "cristian@gmail.com"
+						},
+						{
+							"key": "direccion",
+							"value": "calle uria"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
