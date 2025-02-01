@@ -329,6 +329,13 @@ footer img.icon {
         padding: 5px;
     }
 
+    #language-switcher {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 5px;
+    }
+
     #nombre, #eslogan, #nav1, #nav2, #nav3 {
         font-size: 20px;
         text-align: center;
