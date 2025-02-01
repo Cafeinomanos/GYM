@@ -91,7 +91,7 @@
         <div id="nav3">
             <h2 data-translate="reservanav">RESERVA TU CLASE</h2>
         </div>
-            <form>
+            <form id="reservas_form">
                 <p><label for="name" data-translate="name">Nombre:</label>
                     <input type="text" id="name" name="name" required>
                 </p>
@@ -110,7 +110,7 @@
                 <p><label for="hora_reserva" data-translate="hora_reserva">Hora de reserva:</label>
                     <input type="time" id="hora_reserva" name="hora_reserva" required>
                 </p>
-                <p data-translate="seleccion_clase">¿Qué clase quieres reservar? <select name="clase">
+                <p data-translate="seleccion_clase">¿Qué clase quieres reservar? <select name="clase" id="clase">
                     <option value="selecciona">-----</option>
                     <option value="yoga" data-translate="yoga">Yoga</option>
                     <option value="pilates" data-translate="pilates">Pilates</option>
@@ -120,14 +120,9 @@
                     <option value="futbol" data-translate="futbol_opcion">Fútbol</option>
                     <option value="padel" data-translate="padel_opcion">Pádel</option>
                 </select></p>
-                <p data-translate="seleccion_nivel">¿En qué nivel te encuentras? <select name="nivel">
-                    <option value="selecciona">-----</option>
-                    <option value="principiante" data-translate="principiante">Principiante</option>
-                    <option value="intermedio" data-translate="intermedio">Intermedio</option>
-                    <option value="avanzado" data-translate="avanzado">Avanzado</option>
-                </select></p>
                 <input id="enviar" data-translate="enviar" type="submit" value="Enviar"/>
             </form>
+            <ul id="reservas_lista"></ul>
     <footer>
         <div>
             <a href="#nav1" data-translate="informacionnav">Información</a> | 
