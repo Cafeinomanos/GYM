@@ -1,12 +1,12 @@
 CREATE TABLE Instalaciones (
-id_instalacion INT AUTO_INCREMENT PRIMARY KEY,
+id_instalacion INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
 tipo VARCHAR(255) NOT NULL,
 capacidad INT NOT NULL,
 estado VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE Usuarios (
-id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+id_usuario INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
 nombre VARCHAR(255) NOT NULL,
 apellidos VARCHAR(255) NOT NULL,
 telefono VARCHAR(15) NOT NULL,
@@ -15,7 +15,7 @@ direccion VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE Reservas (
-id_reserva INT AUTO_INCREMENT PRIMARY KEY,
+id_reserva INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
 id_usuario INT,
 id_instalacion INT,
 fecha DATE NOT NULL,
@@ -26,14 +26,14 @@ FOREIGN KEY (id_instalacion) REFERENCES Instalaciones(id_instalacion)
 );
 
 CREATE TABLE Actividades (
-id_actividad INT AUTO_INCREMENT PRIMARY KEY,
+id_actividad INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
 nombre VARCHAR(255) NOT NULL,
 nivel VARCHAR(255) NOT NULL,
 horario VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE Entrenadores (
-id_entrenador INT AUTO_INCREMENT PRIMARY KEY,
+id_entrenador INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
 nombre VARCHAR(255) NOT NULL,
 apellidos VARCHAR(255) NOT NULL,
 fecha_alta DATE NOT NULL,

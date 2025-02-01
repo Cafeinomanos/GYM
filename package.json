@@ -1,9 +1,22 @@
 {
-  "name": "demo-repo",
-  "version": "0.2.0",
-  "description": "A sample package.json",
+  "name": "practica_gym",
+  "version": "1.0.0",
+  "main": "server.js",
   "dependencies": {
-    "@primer/css": "17.0.1"
+    "corepack": "^0.30.0",
+    "npm": "^10.9.2",
+    "express":"4.21.2",
+    "sqlite3":"5.1.7",
+    "cors":"2.8.5",
+    "body-parser": "1.20.3"
+
   },
-  "license": "MIT"
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Cristian Alonso",
+  "license": "UNLICENSED",
+  "description": ""
 }
